@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
-
+import CartWidget from './CartWidget';
+import './NavBar.css'
 
 function NavBar() {
 
@@ -12,6 +13,7 @@ function NavBar() {
                     <Nav.Link href="PS5">PS5</Nav.Link>
                     <Nav.Link href="Todos los Juegos">Todos Los Juegos</Nav.Link>
                 </Nav>
+            <CartWidget items ={2}/>
             </Container>
         </Navbar>
 
