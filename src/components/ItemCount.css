@@ -1,0 +1,23 @@
+span {
+    font-size: 20px;
+}
+
+.container-botones {
+    height: 70px;
+    width: 200px;
+    border: 1px solid silver;
+
+}
+
+.btn-sum-rest {
+    border: none;
+    background-color: transparent;
+    color: #FF7F11;
+    font-size: 25px;
+}
+
+.btn-agregar{
+    border: none;
+    background-color: #FF7F11;
+    border-radius: 5px;
+}
