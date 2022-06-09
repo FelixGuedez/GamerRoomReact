@@ -1,11 +1,25 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
+import React, { useState, useEffect } from 'react'
+import ItemList from './ItemList'
 
 export default function ItemListContainer() {
+    const [juegos, setJuegos] = useState([])
+
+    useEffect(() => {
+
+        setTimeout(() => {
+            fetch('data.json')
+                .then(res => res.json())
+                .then(res => setJuegos(res))
+                .catch(error => console.error('Error:', error))
+
+        }, 2000);
+
+
+    }, [])
+    console.log(juegos)
+
     return (
-            <Container>
-                <h1>Bienvenidos a Gamer Room</h1>
-            </Container>
+        <ItemList juegos={juegos} />
 
     )
 }

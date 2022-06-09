@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <NavBar/>
-      <ItemListContainer />
+      {/* <ItemListContainer /> */}
       <ItemCount inicial={1} stock={5} onAdd={onAdd}/>
     </>
 
