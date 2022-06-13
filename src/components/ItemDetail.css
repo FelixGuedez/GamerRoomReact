@@ -1,0 +1,48 @@
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.container-item{
+    padding-top: 30px;
+    padding-left: 400px;
+    padding-right: 200px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.container-img {
+    height: 500px;
+    width: 400px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 50px;
+}
+
+
+.container-info {
+    height: 500px;
+    width: 500px;
+    /* background-color:bisque; */
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.precio {
+    font-family: cursive;
+}
+
+
+
+.descripcion {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
