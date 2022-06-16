@@ -5,6 +5,7 @@ import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+
 function App() {
   // const onAdd = (count) => {
   //   alert('Agregastes ' + count + ' productos al carrito')
@@ -22,10 +23,9 @@ function App() {
           <Route path='item/:id' element={<ItemDetailContainer />} />
         </Routes>
       </BrowserRouter>
-      {/* <ItemDetailContainer id={1}/> */}
     </>
 
   );
-}
+} 
 
 export default App;

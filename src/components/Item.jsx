@@ -5,7 +5,6 @@ import './Item.css'
 
 const Item = ({ juego }) => {
     const { id, nombre, consola, img } = juego
-    console.log(juego.nombre)
 
     return (
 

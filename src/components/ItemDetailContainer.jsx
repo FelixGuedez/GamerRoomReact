@@ -1,30 +1,40 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import ItemDetail from './ItemDetail';
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
-    const {id} = useParams();
-    const [juego, setJuego] = useState([])
-
+    const [juego, setJuego] = useState()
+    const { id } = useParams();
     console.log(id)
+
+
     useEffect(() => {
 
         const getItem = () => {
             fetch('../data.json')
                 .then(res => res.json())
-                .then(res => setJuego(res.find((el) => el.id == id)))
+                .then(res => {
+                    const juegoEncontrado = (res.find((el) => el.id === Number(id)))
+                    console.log(juegoEncontrado)
+                    setJuego(juegoEncontrado)
+                    
+                })
                 .catch(error => console.error('Error:', error))
-
         }
 
         getItem()
 
     }, [id])
 
+
     return (
 
-        <ItemDetail juego={juego} />
+        <>
+            {juego ? <ItemDetail juego={juego} /> : 'Cargando detalle ...'}
+
+
+        </>
 
     )
 }

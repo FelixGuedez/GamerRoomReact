@@ -2,6 +2,8 @@ import React from 'react'
 import ItemCount from './ItemCount'
 import './ItemDetail.css'
 
+
+
 const ItemDetail = ({ juego }) => {
 
   const { nombre, consola, descripcion, precio, img } = juego
@@ -18,10 +20,10 @@ const ItemDetail = ({ juego }) => {
 
         <div className='container-info'>
           <h2>{nombre}</h2>
-          <p className='categoria'>{consola}</p>
-          <p className='precio'>${precio}CLP</p>
-          <p className='descripcion'>{descripcion}</p>
-          <ItemCount inicial={1} stock={5} />
+          <span className='categoria'>{consola}</span>
+          <span className='precio'>${precio}CLP</span>
+          <span className='descripcion'>{descripcion}</span>
+          <ItemCount inicial={1} stock={5}/>
         </div>
       </div>
 
