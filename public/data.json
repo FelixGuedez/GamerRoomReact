@@ -3,119 +3,133 @@
         "id": 1, 
         "nombre": "GOD OF WAR", 
         "consola": "Ps4", 
+        "descripcion": "Esta entrega está protagonizada por Kratos y Atreus, que deberán sobrevivir en un mundo habitado por dioses y criaturas nórdicas que los pondrán a prueba a cada instante. Ambientada en los entornos más increíbles y peligrosos de la saga, los jugadores podrán disfrutar de una apasionante historia." ,
         "precio": 10000, 
         "cantidad": 1, 
-        "img": "./images/God of War.jpg"
+        "img": "../images/God of War.jpg"
     },
     { 
         "id": 2, 
         "nombre": "THE LAST OF US", 
         "consola": "Ps4", 
+        "descripcion": "En escenarios moralmente conflictivos y entornos imprevisibles, la lucha desesperada por la supervivencia se siente como nunca antes gracias a los evolucionados sistemas de juego y características mejoradas como el combate cuerpo a cuerpo de alta intensidad, el movimiento fluido y el sigilo dinámico." ,
         "precio": 12000, 
         "cantidad": 1, 
-        "img": "./images/The Last of Us.jpg"
+        "img": "../images/The Last of Us.jpg"
     },
     { 
         "id": 3, 
         "nombre": "FIFA 2022", 
         "consola": "Ps4", 
+        "descripcion": "Esta edición acerca el juego aún más a la realidad gracias a mejoras significativas en la jugabilidad y una nueva temporada de novedades en todos los modos. Con Kylian Mbappé como figura destacada, en esta entrega los jugadores podrán hacer realidad sus sueños en el modo Carrera y llegar más lejos que nunca." ,
         "precio": 17000, 
         "cantidad": 1, 
-        "img": "./images/FIFA 22.jpg"
+        "img": "../images/FIFA 22.jpg"
     },
     { 
         "id": 4, 
         "nombre": "F1 2021", 
         "consola": "Ps4", 
+        "descripcion": "Cada historia tiene un comienzo en esta entrega del popular juego del Campeonato Mundial de Fórmula 1. Los jugadores disfrutarán de la emocionante experiencia de la historia 'Braking Point' y competirán en pantalla dividida. El espectáculo de carreras más grande del planeta contará con veinte pilotos heroicos y diez equipos icónicos de la temporada 2021." ,
         "precio": 13000, 
         "cantidad": 1, 
-        "img": "./images/F1 2021.jpg" 
+        "img": "../images/F1 2021.jpg" 
     },
     { 
         "id": 5, 
         "nombre": "ELDEN RING", 
         "consola": "Ps5", 
+        "descripcion": "Un drama épico donde el extenso mundo de las Tierras Intermedias espera ser descubierto. Los jugadores podrán personalizar el aspecto de su personaje y desarrollarlo según su estilo de juego, combinando libremente armas, armaduras y magia para enfrentar amenazas desconocidas." ,
         "precio": 20000, 
         "cantidad": 1, 
-        "img": "./images/Elden Ring.jpg" 
+        "img": "../images/Elden Ring.jpg" 
     },
     { 
         "id": 6, 
         "nombre": "HORIZON FORBIDDEN WEST", 
         "consola": "Ps5", 
+        "descripcion": "Los jugadores se unirán a Aloy mientras enfrenta al Oeste Prohibido, una frontera mortal que oculta nuevas y misteriosas amenazas. En este mundo abierto expansivo podrán explorar frondosos bosques, ciudades sumergidas y las imponentes montañas de una América del futuro lejano, mientras luchan contra máquinas enormes y enemigos humanos." ,
         "precio": 25000, 
         "cantidad": 1, 
-        "img": "./images/Horizon Forbidden West.jpg" 
+        "img": "../images/Horizon Forbidden West.jpg" 
     },
     { 
         "id": 7, 
         "nombre": "GRAN TURISMO 7", 
         "consola": "Ps5", 
+        "descripcion": "Si eres piloto competitivo, coleccionista, creador de ajustes de precisión, diseñador de apariencias, fotógrafo o fanático de los juegos arcade, puedes encender tu pasión por los autos con las características inspiradas en el pasado, el presente y el futuro de Gran Turismo. Disfruta de las mejores funciones de las entregas anteriores de la serie, desde vehículos y circuitos clásicos hasta la reincorporación del legendario modo Simulación de GT. Y si te encanta correr, puedes practicar y competir en los FIA Championships y el modo Sport." ,
         "precio": 23000, 
         "cantidad": 1, 
-        "img": "./images/Gran Turismo 7.jpg" 
+        "img": "../images/Gran Turismo 7.jpg" 
     },
     { 
         "id": 8, 
         "nombre": "DEMONS SOUL", 
         "consola": "Ps5", 
+        "descripcion": "Demon's Souls Remake es la puesta al día del clásico videojuego de rol y acción en tercera persona de FromSoftware para PlayStation 5. Desarrollado por Bluepoint Games se trata de una ambiciosa actualización del título que inició el fenómeno Souls, que a posteriori sería seguido por Dark Souls y Bloodborne. El título, que se considera un clásico moderno y es la segunda colaboración entre Bluepoint y Japan Studio tras Shadow of the Colossus Remake, aprovechará las bondades técnicas del rompedor e innovador hardware de la nueva sobremesa de Sony." ,
         "precio": 18000, 
         "cantidad": 1, 
-        "img": "./images/Demons Soul.jpg"
+        "img": "../images/Demons Soul.jpg"
     },
 
     { 
         "id": 9, 
         "nombre": "CALL OF DUTY MODERN WARFARE", 
         "consola": "Ps4", 
+        "descripcion": "Una guerra moderna que recupera algunos de los personajes del Modern Warfare original. Esta entrega ofrece a los jugadores experiencias de juego individual y cooperativo para disfrutar al máximo de la visión nocturna, los mapas de batallas de tamaños sin precedentes y la personalización del arsenal." ,
         "precio": 23000, 
         "cantidad": 1, 
-        "img": "./images/Call Of Duty Modern Warfare.jpg"
+        "img": "../images/Call Of Duty Modern Warfare.jpg"
     },
 
     { 
         "id": 10, 
         "nombre": "CYBERPUNK 2077", 
         "consola": "Ps4", 
+        "descripcion": "Esta historia de acción y aventura en mundo abierto se ambienta en Night City, una megalópolis obsesionada con el poder y la modificación corporal. Los jugadores estarán en la piel de un mercenario que busca un implante único que es la clave para la inmortalidad." ,
         "precio": 14000, 
         "cantidad": 1, 
-        "img": "./images/Cyberpunk 2077.jpg"
+        "img": "../images/Cyberpunk 2077.jpg"
     },
 
     { 
         "id": 11, 
         "nombre": "GTA 5", 
         "consola": "Ps4", 
+        "descripcion": "Esta entrega de la saga combina historia y jugabilidad de una forma totalmente nueva y permite a los jugadores asumir un rol dentro del juego como estafador callejero, ex convicto o maníaco para construir su propio imperio criminal en una ciudad en decadencia." ,
         "precio": 16000, 
         "cantidad": 1, 
-        "img": "./images/GTA 5.jpg"
+        "img": "../images/GTA 5.jpg"
     },
 
     { 
         "id": 12, 
         "nombre": "MORTAL KOMBAT 11", 
         "consola": "Ps4", 
+        "descripcion": "Con opciones de personalización interminables, esta entrega brinda más control en la pelea y una experiencia más profunda y personalizada que nunca en una narrativa nueva que se enfrenta al Raiden contra Kronika, el Guardián del Tiempo." ,
         "precio": 18000, 
         "cantidad": 1, 
-        "img": "./images/Mortal Kombat 11.jpg"
+        "img": "../images/Mortal Kombat 11.jpg"
     },
 
     { 
         "id": 13, 
         "nombre": "THE LAST OF US 2", 
         "consola": "Ps4", 
+        "descripcion": "Esta entrega se desarrolla cinco años después de la catástrofe, cuando Ellie y Joel viven en una tranquila comunidad de sobrevivientes de Wynoming. Los jugadores serán testigos de un violento evento que interrumpe esa paz y experimentarán un viaje en busca de justicia y venganza." ,
         "precio": 18000, 
         "cantidad": 1, 
-        "img": "./images/The Last Of Us 2.jpg"
+        "img": "../images/The Last Of Us 2.jpg"
     },
 
     { 
         "id": 14, 
         "nombre": "ASSASSINS CREED VALHALLA", 
         "consola": "Ps5", 
+        "descripcion": "Ambientada en un mundo abierto de la Edad Oscura, los jugadores se convertirán en un legendario guerrero vikingo que deberá vencer a sus enemigos en la búsqueda por ganarse un lugar entre los dioses en Valhalla. Vivirán una experiencia inmersiva gracias a la tecnología DualSense, en el uso de armas y percepción del ambiente" ,
         "precio": 21000, 
         "cantidad": 1, 
-        "img": "./images/Assassins Creed Valhalla.jpg"
+        "img": "../images/Assassins Creed Valhalla.jpg"
     },
 
     
@@ -123,36 +137,40 @@
         "id": 15, 
         "nombre": "CALL OF DUTY COLDWAR", 
         "consola": "Ps5", 
+        "descripcion": "Esta secuela llevará a los jugadores a la Guerra Fría de principios de la década de 1980, donde se encontrarán con personajes históricos mientras luchan en lugares emblemáticos. Nuevas formas de progresar y un gran arsenal ayudarár a los supervivientes a derrotar a las legiones de no muertos." ,
         "precio": 26000, 
         "cantidad": 1, 
-        "img": "./images/Call Of Duty Coldwar.jpg"
+        "img": "../images/Call Of Duty Coldwar.jpg"
     },
 
     { 
         "id": 16, 
         "nombre": "FAR CRY 6", 
         "consola": "Ps5", 
+        "descripcion": "En una isla tropical, los jugadores encarnarán a Dani Rojas como hombre o mujer y experimentarán una historia que los llevará de ser un ciudadano reacio a un líder que lucha contra el régimen de Anton, empleando armas, vehículos y animales. En PS5 se harán notar las mejoras gráficas y menores tiempos de carga." ,
         "precio": 17000, 
         "cantidad": 1, 
-        "img": "./images/Far Cry 6.jpg"
+        "img": "../images/Far Cry 6.jpg"
     },
 
     { 
         "id": 17, 
         "nombre": "RETURNAL", 
         "consola": "Ps5", 
+        "descripcion": "Se trata de un título diferente a todos los anteriores del estudio, que había sido videojuegos twin stick shooters. En esta ocasión, sus creadores han apostado por ofrecernos una aventura en tercera persona de ciencia ficción con toques de terror, en la que una mujer parece revivir una y otra vez una serie de traumáticas experiencias en un planeta lleno de criaturas surgidas de la más retorcidas de las pesadillas" ,
         "precio": 14000, 
         "cantidad": 1, 
-        "img": "./images/Returnal.jpg"
+        "img": "../images/Returnal.jpg"
     },
 
     { 
         "id": 18, 
         "nombre": "SPIDERMAN MILES MORALES", 
         "consola": "Ps5", 
+        "descripcion": "Para salvar a toda Nueva York, Miles Morales deberá tomar en serio su rol como un nuevo Spider-Man. Los jugadores se encontrarán con excepcionales efectos de audio y una mecánica de combate alucinante y divertida, junto con un esquema de progresión que permitirá desarrollar sus habilidades." ,
         "precio": 20000, 
         "cantidad": 1, 
-        "img": "./images/Spiderman Miles Morales.jpg"
+        "img": "../images/Spiderman Miles Morales.jpg"
     }
     
 ]

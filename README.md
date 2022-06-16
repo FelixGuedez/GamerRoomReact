@@ -1,3 +1,16 @@
+
+Se desarrollo un pagina web dedicaba a la venta de video juegos de Playstation, en ellas podras observar ver y comprar los juegos mas populares del mercado. Se podra filtar por categoria los juegos que quieras ver, ya sea de PS4 o de Ps5.
+tambien podras ver una breve descripcion del juego y añadirlo al carrito si quieres que sea tuyo.
+
+Aca puedes ver un pequeño GIF de lo que puedes encontar en la pagina.
+https://drive.google.com/file/d/1s-til08JpMWxAe8IiyWmvlZx5tclST8R/view?usp=sharing
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

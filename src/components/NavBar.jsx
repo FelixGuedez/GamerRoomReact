@@ -1,17 +1,18 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import CartWidget from './CartWidget';
 import './NavBar.css'
+import { Link } from 'react-router-dom'
 
 function NavBar() {
 
     return (
         <Navbar expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">GAMER <span style={{ color: "#FF7F11" }}>ROOM</span></Navbar.Brand>
+            <Link className='brand' to = {'/home'}> GAMER <span className='brand-span' style={{ color: "#FF7F11" }}>ROOM</span></Link>
             <Container>
                 <Nav className="me-auto">
-                    <Nav.Link href="PS4">PS4</Nav.Link>
-                    <Nav.Link href="PS5">PS5</Nav.Link>
-                    <Nav.Link href="Todos los Juegos">Todos Los Juegos</Nav.Link>
+                    <Link className='link-NavBar' to = {'/category/Ps4'}>PS4</Link>
+                    <Link className='link-NavBar' to = {'/category/Ps5'}>PS5</Link>
+                    <Link className='link-NavBar' to = {'/home'}>Todos Los Juegos</Link>
                 </Nav>
             <CartWidget items ={2}/>
             </Container>
@@ -20,3 +21,5 @@ function NavBar() {
     );
 }
 export default NavBar;
+
+

@@ -1,3 +1,28 @@
-.me-auto:hover {
-    color: #FF7F11 !important;
+.brand {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.brand-span{
+    font-size: 25px;
+}
+
+
+
+.link-NavBar {
+    padding-left: 30px;
+    text-decoration: none;
+    color: #FF7F11;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+.link-NavBar :hover {
+    color: gray !important;
 }

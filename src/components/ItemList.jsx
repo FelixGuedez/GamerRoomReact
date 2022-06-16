@@ -1,13 +1,13 @@
 import React from 'react'
 import Item from './Item'
+import { useParams } from 'react-router-dom';
 import './ItemList.css'
 
-const ItemList = ({juegos}) => {
+const ItemList = ({ juegos }) => {
 
     return (
         <div className='item-list'>
             {juegos?.map(juego => <Item key={juego.id} juego={juego} />)}
-
         </div>
     )
 }
