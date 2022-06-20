@@ -4,13 +4,11 @@ import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Cart from './components/Cart'
 
 
 function App() {
-  // const onAdd = (count) => {
-  //   alert('Agregastes ' + count + ' productos al carrito')
 
-  // }
 
   return (
     <>
@@ -21,6 +19,7 @@ function App() {
           <Route path='/home' element={<ItemListContainer />} />
           <Route path='/category/:categoryId' element={<ItemListContainer />} />
           <Route path='item/:id' element={<ItemDetailContainer />} />
+          <Route path='cart' element ={<Cart/>} />
         </Routes>
       </BrowserRouter>
     </>

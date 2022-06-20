@@ -1,13 +1,22 @@
-import React from 'react'
+import {React, useState } from 'react'
 import ItemCount from './ItemCount'
+import {Button} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 import './ItemDetail.css'
+
 
 
 
 const ItemDetail = ({ juego }) => {
 
-  const { nombre, consola, descripcion, precio, img } = juego
-  console.log(juego)
+  const { nombre, consola, descripcion, precio, img, stock } = juego
+  const [agreCarrito, SetAgreCarrito] = useState(true)
+
+  const onAdd = (count) => {
+    alert('Agregastes ' + count + ' productos al carrito')
+    SetAgreCarrito(false);
+
+  }
 
   return (
     <>
@@ -20,10 +29,11 @@ const ItemDetail = ({ juego }) => {
 
         <div className='container-info'>
           <h2>{nombre}</h2>
-          <span className='categoria'>{consola}</span>
-          <span className='precio'>${precio}CLP</span>
-          <span className='descripcion'>{descripcion}</span>
-          <ItemCount inicial={1} stock={5}/>
+          <p className='categoria'>{consola}</p>
+          <p className='precio'>${precio}CLP</p>
+          <p className='stock'>Stock: {stock}</p>
+          <p className='descripcion'>{descripcion}</p>
+          {agreCarrito ? <ItemCount inicial={1} stock={stock} onAdd={onAdd}/>: <Link to = {'/cart/'} ><Button className='btn-agregar'>Finalizar Compra</Button></Link>}
         </div>
       </div>
 
