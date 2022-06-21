@@ -7,14 +7,14 @@ function NavBar() {
 
     return (
         <Navbar expand="lg" bg="dark" variant="dark">
-            <Link className='brand' to = {'/home'}> GAMER <span className='brand-span' style={{ color: "#FF7F11" }}>ROOM</span></Link>
+            <Link className='brand' to={'/home'}> GAMER <span className='brand-span' style={{ color: "#FF7F11" }}>ROOM</span></Link>
             <Container>
                 <Nav className="me-auto">
-                    <Link className='link-NavBar' to = {'/category/Ps4'}>PS4</Link>
-                    <Link className='link-NavBar' to = {'/category/Ps5'}>PS5</Link>
-                    <Link className='link-NavBar' to = {'/home'}>Todos Los Juegos</Link>
+                    <Link className='link-NavBar' to={'/category/Ps4'}>PS4</Link>
+                    <Link className='link-NavBar' to={'/category/Ps5'}>PS5</Link>
+                    <Link className='link-NavBar' to={'/home'}>Todos Los Juegos</Link>
                 </Nav>
-            <CartWidget items ={2}/>
+                <Link to={'/cart'}> <CartWidget /> </Link>
             </Container>
         </Navbar>
 

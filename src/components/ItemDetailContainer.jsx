@@ -6,7 +6,6 @@ import { useParams } from 'react-router-dom';
 const ItemDetailContainer = () => {
     const [juego, setJuego] = useState()
     const { id } = useParams();
-    console.log(id)
 
 
     useEffect(() => {
@@ -16,7 +15,6 @@ const ItemDetailContainer = () => {
                 .then(res => res.json())
                 .then(res => {
                     const juegoEncontrado = (res.find((el) => el.id === Number(id)))
-                    console.log(juegoEncontrado)
                     setJuego(juegoEncontrado)
                     
                 })

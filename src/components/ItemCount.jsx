@@ -3,14 +3,14 @@ import './ItemCount.css'
 
 const ItemCount = ({ inicial, stock, onAdd }) => {
 
-    const [count, setCount] = useState(inicial)
+    const [qty, SetQty] = useState(inicial)
 
     const sumar = () => {
-        count < stock ? setCount(count + 1) : alert('No puedes agregar mas productos')
+        qty < stock ? SetQty(qty + 1) : alert('No puedes agregar mas productos')
     }
 
     const restar = () => {
-        count > inicial ? setCount(count - 1) : alert('No puedes quitar mas productos')
+        qty > inicial ? SetQty(qty - 1) : alert('No puedes quitar mas productos')
     }
 
 
@@ -18,12 +18,12 @@ const ItemCount = ({ inicial, stock, onAdd }) => {
         <div className='container-botones '>
             <div className='btn-producto d-flex justify-content-between '>
                 <button className='btn-sum-rest' onClick={restar}>-</button>
-                <span>{count}</span>
+                <span>{qty}</span>
                 <button className='btn-sum-rest' onClick={sumar}>+</button>
             </div>
             <div className='d-flex flex-column align-items-center'>
                 <button className='btn-agregar' onClick={() => {
-                    (count <= stock && count > 0) ? onAdd(count) : alert('No existe stock de este producto')}}>Agregar a Carrito</button>
+                    (qty <= stock && qty > 0) ? onAdd(qty) : alert('No existe stock de este producto')}}>Agregar a Carrito</button>
             </div>
 
         </div>

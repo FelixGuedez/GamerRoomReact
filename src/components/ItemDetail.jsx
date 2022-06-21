@@ -3,18 +3,28 @@ import ItemCount from './ItemCount'
 import {Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import './ItemDetail.css'
-
-
-
+import { useContext } from 'react';
+import { CartContext } from './context/CartContext';
 
 const ItemDetail = ({ juego }) => {
 
   const { nombre, consola, descripcion, precio, img, stock } = juego
   const [agreCarrito, SetAgreCarrito] = useState(true)
 
-  const onAdd = (count) => {
-    alert('Agregastes ' + count + ' productos al carrito')
+
+  const {isInCart, addItem, cart} = useContext(CartContext)
+
+  const onAdd = (qty) => {
+    // alert('Agregastes ' + qty + ' productos al carrito')
+    isInCart(juego.id)
+    addItem(juego, qty)
+    console.log(cart)
+        
+
+
+
     SetAgreCarrito(false);
+
 
   }
 
