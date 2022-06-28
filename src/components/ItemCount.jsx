@@ -23,7 +23,7 @@ const ItemCount = ({ inicial, stock, onAdd }) => {
             </div>
             <div className='d-flex flex-column align-items-center'>
                 <button className='btn-agregar' onClick={() => {
-                    (qty <= stock && qty > 0) ? onAdd(qty) : alert('No existe stock de este producto')}}>Agregar a Carrito</button>
+                    (qty <= stock && qty > 0) ? onAdd(qty) : alert('No existe mas stock de este producto')}}>Agregar a Carrito</button>
             </div>
 
         </div>

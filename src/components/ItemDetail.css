@@ -46,3 +46,11 @@ h1{
     padding-bottom: 20px;
     text-align: justify;
 }
+
+.btn-item-detail {
+    background-color: #FF7F11;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+}

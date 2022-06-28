@@ -1,0 +1,22 @@
+.cart-container {
+    width:90%;
+    min-height: 20px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    color: #FF7F11
+}
+
+.img-item-cart{
+    max-width: 100px;
+    max-height: 100px;
+
+}
+
+/* .table-striped>tbody>tr:nth-of-type(odd)>* {
+    color:#FF7F11
+}
+
+.table-dark {
+    color:#FF7F11
+} */

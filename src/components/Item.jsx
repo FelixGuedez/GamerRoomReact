@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom'
 import './Item.css'
 
 const Item = ({ juego }) => {
+
     const { id, nombre, consola, img } = juego
 
-    return (
 
+    return (
         <Card style={{ width: '16rem', margin: 20 }}>
             <Card.Img variant="top" src={img} />
             <Card.Body>
@@ -16,9 +17,11 @@ const Item = ({ juego }) => {
                     <p>Consola:{consola}</p>
                 </Card.Text>
                 <Link to = {'/item/' + id} ><Button className= 'btn-detail'>Ver mas</Button></Link>
-                
             </Card.Body>
         </Card>
+    
+        
+
 
     )
 }
