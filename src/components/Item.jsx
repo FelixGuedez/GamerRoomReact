@@ -14,7 +14,7 @@ const Item = ({ juego }) => {
             <Card.Body>
                 <Card.Title>{nombre}</Card.Title>
                 <Card.Text>
-                    <p>Consola:{consola}</p>
+                    Consola:{consola}
                 </Card.Text>
                 <Link to = {'/item/' + id} ><Button className= 'btn-detail'>Ver mas</Button></Link>
             </Card.Body>

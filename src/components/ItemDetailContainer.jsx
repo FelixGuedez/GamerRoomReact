@@ -2,26 +2,31 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom';
+import { doc, getDoc, getFirestore } from 'firebase/firestore'
+import Loader from './Loader';
 
 const ItemDetailContainer = () => {
     const [juego, setJuego] = useState()
     const { id } = useParams();
+    const [loading, setLoading] = useState(true)
 
 
     useEffect(() => {
+        const db = getFirestore()
+        const productRef = doc(db, 'items', id)
 
-        const getItem = () => {
-            fetch('../data.json')
-                .then(res => res.json())
-                .then(res => {
-                    const juegoEncontrado = (res.find((el) => el.id === Number(id)))
-                    setJuego(juegoEncontrado)
-                    
-                })
-                .catch(error => console.error('Error:', error))
-        }
+        getDoc(productRef).then((snapshot) => {
+            setJuego({...snapshot.data(), id: snapshot.id})
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+        .finally(() =>{
+            setLoading(false)
+            console.log(juego)
+        })
 
-        getItem()
+
 
     }, [id])
 
@@ -29,7 +34,7 @@ const ItemDetailContainer = () => {
     return (
 
         <>
-            {juego ? <ItemDetail juego={juego} /> : 'Cargando detalle ...'}
+            {loading ? <Loader/> : <ItemDetail juego={juego} />}
 
 
         </>

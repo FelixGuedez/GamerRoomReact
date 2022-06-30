@@ -5,6 +5,7 @@ h1{
 }
 
 .container-item{
+    width: 100%;
     padding-top: 30px;
     padding-left: 400px;
     padding-right: 200px;

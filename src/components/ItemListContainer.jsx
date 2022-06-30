@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ItemList from './ItemList'
 import { useParams } from "react-router-dom";
 import Loader from './Loader';
-
+import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
 
 export default function ItemListContainer() {
     const [juegos, setJuegos] = useState([])
@@ -12,24 +12,40 @@ export default function ItemListContainer() {
     useEffect(() => {
         setLoading(true)
 
-        setTimeout(() => {
-            fetch('../data.json')
-                .then(res => res.json())
-                .then(res => {
-                    if (categoryId) {
-                        setJuegos(res.filter((juegos) => juegos.consola === categoryId))
-                    } else {
-                        setJuegos(res)
-                    }
-                })
-                .catch(error => console.error('Error:', error))
-            setLoading(false)
+        const db = getFirestore()
+        const productsColletion = collection(db, 'items')
 
-        }, 2000);
+        if (categoryId) {
+            const q = query(productsColletion, where('consola', '==', categoryId))
+            getDocs(q).then(snapshot => {
+                setJuegos(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+            })
+                .catch((error) => {
+                    console.log(error)
+                })
+                .finally(() => {
+                    setLoading(false)
+                })
+        }
+
+        else {
+
+            getDocs(productsColletion).then(snapshot => {
+                setJuegos(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+            })
+                .catch((error) => {
+                    console.log(error)
+                })
+                .finally(() => {
+                    setLoading(false)
+                    console.log(juegos)
+                })
+        }
+
     }, [categoryId])
 
     return (
-        loading ? <Loader/> : <ItemList juegos={juegos} />
+        loading ? <Loader /> : <ItemList juegos={juegos} />
 
     )
 }

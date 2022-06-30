@@ -1,15 +1,27 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
-import ItemDetailContainer from './components/ItemDetailContainer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Cart from './components/Cart'
+import './App.css';
+import Cart from './components/Cart';
 import MyProvider from './components/context/CartContext';
-import Loader from './components/Loader';
+import ItemDetailContainer from './components/ItemDetailContainer';
+import ItemListContainer from './components/ItemListContainer';
+import NavBar from './components/NavBar';
+import { initializeApp } from "firebase/app";
+
+
 
 
 function App() {
+  const firebaseConfig = {
+    apiKey: "AIzaSyCktM34T_AQ3rJNbmENlLIpaj4sEXYOSak",
+    authDomain: "gamer-room-react.firebaseapp.com",
+    projectId: "gamer-room-react",
+    storageBucket: "gamer-room-react.appspot.com",
+    messagingSenderId: "459653003371",
+    appId: "1:459653003371:web:2e3b97c687f6495827192e"
+  };
+  
+  initializeApp(firebaseConfig);
 
 
   return (
