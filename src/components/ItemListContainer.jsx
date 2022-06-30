@@ -38,7 +38,6 @@ export default function ItemListContainer() {
                 })
                 .finally(() => {
                     setLoading(false)
-                    console.log(juegos)
                 })
         }
 
