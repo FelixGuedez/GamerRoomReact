@@ -61,6 +61,7 @@ export default function Cart() {
                 <div className='container-fluid d-flex justify-content-center'>
                     <button className='btn-agregar m-5' onClick={() => { emptyCart() }}>Borrar Carrito</button>
                     <Link to={'/home'}> <Button className='btn-agregar m-5'>Agregar Productos</Button></Link>
+                    <Link to={'/checkout'}> <Button className='btn-agregar m-5'>Terminar Compra</Button></Link>
                 </div>
 
             </div>
