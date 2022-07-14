@@ -13,12 +13,11 @@ const ItemDetail = ({ juego }) => {
 
 
 
-  const { isInCart, addItem, cart } = useContext(CartContext)
+  const { isInCart, addItem} = useContext(CartContext)
 
   const onAdd = (qty) => {
     isInCart(juego.id)
     addItem(juego, qty)
-    console.log(cart)
 
     SetAgreCarrito(false);
 
@@ -27,7 +26,7 @@ const ItemDetail = ({ juego }) => {
   return (
     <>
       <h1>Detalles del Producto</h1>
-      <div className='container-item d-flex'>
+      <div className='container-item d-flex container-fluid'>
         <div className='container-img'>
           <img src={img} alt="" />
         </div>
@@ -40,8 +39,8 @@ const ItemDetail = ({ juego }) => {
           {agreCarrito ? <ItemCount inicial={1} stock={stock} onAdd={onAdd} />
             :
             <div>
-              <Link to={'/cart/'} ><Button className='btn-item-detail'>Finalizar Compra</Button></Link>
               <Link to={'/home/'} ><Button className='btn-item-detail'>Continuar Compra</Button></Link>
+              <Link to={'/cart/'} ><Button className='btn-item-detail'>Finalizar Compra</Button></Link>
             </div>
           }
         </div>

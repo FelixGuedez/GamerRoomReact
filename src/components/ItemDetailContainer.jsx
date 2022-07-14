@@ -23,7 +23,6 @@ const ItemDetailContainer = () => {
         })
         .finally(() =>{
             setLoading(false)
-            console.log(juego)
         })
 
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { createContext } from "react";
+import { createContext, useEffect } from "react";
 
 export const CartContext = createContext()
 
@@ -7,7 +7,14 @@ const { Provider } = CartContext
 
 const MyProvider = ({ children }) => {
 
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState(JSON.parse(localStorage.getItem('items'))?? [])
+
+
+    useEffect(() => {
+        localStorage.setItem('items', JSON.stringify(cart))
+
+    }, [cart])
+    
 
     const isInCart = (id) => {
         return cart.some(e => e.id === id)
@@ -23,7 +30,7 @@ const MyProvider = ({ children }) => {
             const findProduct = cart.find(e => e.id === newItem.id)
             const productIndex = cart.indexOf(findProduct)
             const auxArray = [...cart]
-            auxArray[productIndex].qty += qty
+            auxArray[productIndex].qty + qty > newItem.stock ? auxArray[productIndex].qty = newItem.stock : auxArray[productIndex].qty += qty
             setCart(auxArray)
 
         } else {

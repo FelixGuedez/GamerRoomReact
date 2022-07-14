@@ -5,19 +5,16 @@ h1{
 }
 
 .container-item{
-    width: 100%;
     padding-top: 30px;
-    padding-left: 400px;
-    padding-right: 200px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 
 .container-img {
-    height: 500px;
-    width: 400px;
-    /* background-color: aquamarine; */
+    /* height: 500px;
+    width: 400px; */
     display: flex;
     justify-content: center;
     overflow: hidden;

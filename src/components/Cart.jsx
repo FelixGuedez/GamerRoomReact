@@ -11,7 +11,7 @@ export default function Cart() {
 
     return (
         <>
-            <div className='cart-container container-fluid d-flex flex-column justify-content-center align-items-center'>
+            <div className='cart-container d-flex flex-column justify-content-center align-items-center'>
                 {
                     getItemQty() > 0 ?
 
@@ -19,7 +19,7 @@ export default function Cart() {
                         :
                         <h1> No hay productos en el carrito, por favor agregue sus productos</h1>
                 }
-                <Table striped bordered hover variant="dark" className='table-cart'>
+                <Table striped bordered hover variant="dark" className='table-cart table-responsive'>
                     <thead>
                         <tr>
                             <th></th>
@@ -29,8 +29,8 @@ export default function Cart() {
                             <th></th>
                         </tr>
                     </thead>
-                    {cart.map(juego =>
-                        <tbody>
+                    {cart.map((juego, index) =>
+                        <tbody key={index}>
                             <tr >
                                 <td className='text-center'>{<img src={juego.img} className='img-item-cart' alt="" />}</td>
                                 <td className='align-middle'>{juego.nombre} {juego.consola}</td>
@@ -59,9 +59,9 @@ export default function Cart() {
                     </tbody>
                 </Table>
                 <div className='container-fluid d-flex justify-content-center'>
-                    <button className='btn-agregar m-5' onClick={() => { emptyCart() }}>Borrar Carrito</button>
+                    {getItemQty() > 0 ? <button className='btn-agregar m-5' onClick={() => { emptyCart() }}>Borrar Carrito</button>:<p></p>}
                     <Link to={'/home'}> <Button className='btn-agregar m-5'>Agregar Productos</Button></Link>
-                    <Link to={'/checkout'}> <Button className='btn-agregar m-5'>Terminar Compra</Button></Link>
+                    {getItemQty() > 0 ? <Link to={'/checkout'}> <Button className='btn-agregar m-5'>Terminar Compra</Button></Link>:<p></p>}
                 </div>
 
             </div>

@@ -1,9 +1,9 @@
 .cart-container {
-    width:90%;
+    /* width:90%; */
     min-height: 20px;
     background-color: black;
     color: white;
-    margin-top: 10px;
+    margin: 15px;
     color: #FF7F11
 }
 
@@ -12,11 +12,3 @@
     max-height: 100px;
 
 }
-
-/* .table-striped>tbody>tr:nth-of-type(odd)>* {
-    color:#FF7F11
-}
-
-.table-dark {
-    color:#FF7F11
-} */

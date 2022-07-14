@@ -10,7 +10,7 @@ import { CartContext } from './context/CartContext';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Checkout() {
-    const { finalizado, setFinalizado } = useState(false)
+    const  [finalizado, setFinalizado]  = useState(false)
     const { getItemPrice, cart } = useContext(CartContext)
     const { register, handleSubmit, formState: { errors } } = useForm();
 
@@ -19,7 +19,7 @@ export default function Checkout() {
     
 
     const onSubmit = (data, e) => {
-        // setFinalizado(true)
+        setFinalizado(true)
         const order = {
             buyer: data,
             items: cart,
@@ -80,7 +80,7 @@ export default function Checkout() {
                     />
                     {errors?.correo?.type === "pattern" && (
                         <p className='mensaje-alerta'>Por favor introduzca un correo electronico valido</p>)}
-                    {finalizado ? <Link to={'/checkout'}> <Button className='btn-agregar m-5'>Terminar Compra</Button></Link>
+                    {finalizado ? <Link to={'/home'}> <Button className='btn-agregar m-5'>Ir al Home</Button></Link>
                         :
                         <button className="btn btn-agregar my-2" type='submit'>Terminar compra</button>
                     }
