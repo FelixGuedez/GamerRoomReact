@@ -8,6 +8,7 @@ import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 import { initializeApp } from "firebase/app";
 import Checkout from './components/Checkout';
+import Footer from './components/Footer';
 
 
 
@@ -38,7 +39,7 @@ function App() {
             <Route path='cart' element={<Cart />} />
             <Route path='checkout' element={<Checkout/>}/>
           </Routes>
-
+          <Footer/>
         </MyProvider>
       </BrowserRouter>
     </>

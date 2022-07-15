@@ -20,3 +20,27 @@
     color: #bf1650;
     font-size: 17px;
 }
+
+.compra-finalizada{
+    background-color: black;
+    color: white;
+    margin: 20px;
+    margin-right: 20px;
+
+}
+
+.order {
+    color: #FF7F11;
+    font-size: 30px;
+}
+
+.mensaje {
+    font-size: 15px;
+
+}
+
+@media (max-width: 400px) {
+    .order {
+        font-size: 20px;
+    }
+}

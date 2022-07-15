@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF7F11;
+    background-color: black;
+    bottom: 0;
+    position: fixed;
+}
+
+.footer-text{
+    text-decoration: none;
+    color: #FF7F11;
+}
