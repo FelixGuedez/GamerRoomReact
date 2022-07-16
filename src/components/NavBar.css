@@ -9,6 +9,9 @@
     font-size: 25px;
 }
 
+.brand:hover{
+    color: #a7cb68
+}
 
 
 .link-NavBar {
@@ -18,12 +21,6 @@
     font-size: 18px;
 }
 
-
-
-
-
-
-
-.link-NavBar :hover {
-    color: gray !important;
+.link-NavBar:hover {
+    color: #a7cb68
 }

@@ -24,6 +24,6 @@ span {
     color: black;
 }
 
-.Toastify__toast-theme--dark {
-    color: #FF7F11;
+.btn-agregar:hover {
+    background: #a7cb68
 }

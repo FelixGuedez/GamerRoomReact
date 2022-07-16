@@ -29,11 +29,11 @@ export default function Cart() {
                                 {cart.map((juego, index) =>
                                     <tbody key={index}>
                                         <tr >
-                                            <td className='text-center'>{<img src={juego.img} className='img-item-cart' alt="" />}</td>
-                                            <td className='align-middle'>{juego.nombre} {juego.consola}</td>
-                                            <td className='align-middle'>{juego.qty}</td>
-                                            <td className='align-middle'>${juego.precio * juego.qty} CLP</td>
-                                            <td className='align-middle'> <button className='btn-agregar' onClick={() => { deleteItem(juego.id) }}>Eliminar</button></td>
+                                            <td className='text-center align-middle'>{<img src={juego.img} className='img-item-cart' alt="" />}</td>
+                                            <td className='align-middle texto-nombre-cart'>{juego.nombre} {juego.consola}</td>
+                                            <td className='align-middle texto-nombre-cart'>{juego.qty}</td>
+                                            <td className='align-middle texto-nombre-cart'>${juego.precio * juego.qty} CLP</td>
+                                            <td className='align-middle'> <button className='btn-agregar-cart d-flex justify-content-center' onClick={() => { deleteItem(juego.id) }}>Eliminar</button></td>
                                         </tr>
                                     </tbody>
                                 )}

@@ -47,3 +47,7 @@
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
+.btn-item-detail:hover{
+    background: #a7cb68
+}

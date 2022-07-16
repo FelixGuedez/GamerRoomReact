@@ -27,6 +27,7 @@ export default function Checkout() {
             items: cart,
             total: getItemPrice(),
         }
+        setFinalizado(true)
         toast.success('Su compra se ha realizado con exito.', {
             position: "top-right",
             autoClose: 5000,
@@ -41,7 +42,6 @@ export default function Checkout() {
         addDoc(ordercollection, order).then(({ id }) => {
             setOrderID(id)
             setComprador(data.nombre)
-            setFinalizado(true)
 
         })
         .catch((error) => {
