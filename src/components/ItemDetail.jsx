@@ -25,12 +25,12 @@ const ItemDetail = ({ juego }) => {
 
   return (
     <>
-      <h1>Detalles del Producto</h1>
-      <div className='container-item d-flex container-fluid'>
+      <h1 className='text-center'>Detalles del Producto</h1>
+      <div className='container-item mb-5'>
         <div className='container-img'>
           <img src={img} alt="" />
         </div>
-        <div className='container-info'>
+        <div className='container-info text-center'>
           <h2>{nombre}</h2>
           <p className='categoria'>{consola}</p>
           <p className='precio'>${precio}CLP</p>

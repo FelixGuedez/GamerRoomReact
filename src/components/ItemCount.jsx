@@ -9,7 +9,7 @@ const ItemCount = ({ inicial, stock, onAdd }) => {
     const sumar = () => {
         qty < stock ? SetQty(qty + 1) :
             toast.warn('No se pueden agregar mas productos', {
-                position: "top-center",
+                position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
                 closeOnClick: true,
@@ -24,7 +24,7 @@ const ItemCount = ({ inicial, stock, onAdd }) => {
     const restar = () => {
         qty > inicial ? SetQty(qty - 1) :
             toast.warn('No se pueden quitar mas productos', {
-                position: "top-center",
+                position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
                 closeOnClick: true,
@@ -34,8 +34,6 @@ const ItemCount = ({ inicial, stock, onAdd }) => {
                 theme: "dark"
             });
     }
-
-
     return (
         <>
             <div className='container-botones '>
@@ -49,8 +47,9 @@ const ItemCount = ({ inicial, stock, onAdd }) => {
                         (qty <= stock && qty > 0) ? onAdd(qty) : alert('No existe mas stock de este producto')
                     }}>Agregar a Carrito</button>
                 </div>
+                <ToastContainer limit={1}/>
             </div>
-            <ToastContainer />
+            
         </>
     )
 }

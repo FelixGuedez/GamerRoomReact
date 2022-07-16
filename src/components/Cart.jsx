@@ -11,7 +11,7 @@ export default function Cart() {
 
     return (
         <>
-            <div className='cart-container d-flex flex-column justify-content-center align-items-center'>
+            <div className='cart-container container-fluid d-flex flex-column justify-content-center align-items-center'>
                 {
                     getItemQty() > 0 ? (
                         <>
@@ -56,16 +56,16 @@ export default function Cart() {
                                 </tbody>
                             </Table>
                             <div className='container-fluid d-flex justify-content-center'>
-                                {getItemQty() > 0 ? <button className='btn-agregar m-5' onClick={() => { emptyCart() }}>Borrar Carrito</button> : <p></p>}
-                                <Link to={'/home'}> <Button className='btn-agregar m-5'>Agregar Productos</Button></Link>
-                                {getItemQty() > 0 ? <Link to={'/checkout'}> <Button className='btn-agregar m-5'>Terminar Compra</Button></Link> : <p></p>}
+                                {getItemQty() > 0 ? <button className='btn-agregar-cart' onClick={() => { emptyCart() }}>Borrar Carrito</button> : <p></p>}
+                                <Link to={'/home'}> <Button className='btn-agregar-cart'>Agregar Productos</Button></Link>
+                                {getItemQty() > 0 ? <Link to={'/checkout'}> <Button className='btn-agregar-cart'>Terminar Compra</Button></Link> : <p></p>}
                             </div>
                         </>
                     )
                         : (
                             <>
-                                <h1> No hay productos en el carrito, por favor agregue sus productos</h1>
-                                <Link to={'/home'}> <Button className='btn-agregar m-5'>Agregar Productos</Button></Link>
+                                <h1 className='aviso-cart'> No hay productos en el carrito, por favor agregue sus productos</h1>
+                                <Link to={'/home'}> <Button className='btn-agregar-cart'>Agregar Productos</Button></Link>
                             </>
                         )
                 }

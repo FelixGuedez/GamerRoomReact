@@ -33,8 +33,8 @@ const MyProvider = ({ children }) => {
             const auxArray = [...cart]
             if (auxArray[productIndex].qty + qty > newItem.stock) {
                 auxArray[productIndex].qty = newItem.stock
-                toast.warn('Las cantidades en el carrito no pueden superar el stock del producto', {
-                    position: "top-center",
+                toast.warn('Se esta superando el stock del producto, por favor verifique el stock', {
+                    position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,
                     closeOnClick: true,
@@ -72,25 +72,9 @@ const MyProvider = ({ children }) => {
 
     }
 
-    const AlertSuccess = (message) => {
-
-        toast.success({ message }, {
-            position: "top-center",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "dark"
-        });
-        return (
-            <ToastContainer />
-        )
-    }
 
     return <>
-        <Provider value={{ cart, isInCart, addItem, deleteItem, emptyCart, getItemQty, getItemPrice, AlertSuccess }} >{children}</Provider>
+        <Provider value={{ cart, isInCart, addItem, deleteItem, emptyCart, getItemQty, getItemPrice }} >{children}</Provider>
         <ToastContainer />
     </>
 

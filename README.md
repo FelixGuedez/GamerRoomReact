@@ -1,78 +1,38 @@
+# Gamer Room. Ecommerce desarrollado on React
+    Proyecto ficticio donde se desarrollo con React Js una pagina web dedicaba a la venta de video juegos de Playstation
 
-Se desarrollo un pagina web dedicaba a la venta de video juegos de Playstation, en ellas podras observar ver y comprar los juegos mas populares del mercado. Se podra filtar por categoria los juegos que quieras ver, ya sea de PS4 o de Ps5.
-tambien podras ver una breve descripcion del juego y añadirlo al carrito si quieres que sea tuyo.
+## Como ejecutar este proyecto:
 
-Aca puedes ver un pequeño GIF de lo que puedes encontar en la pagina.
-https://drive.google.com/file/d/1s-til08JpMWxAe8IiyWmvlZx5tclST8R/view?usp=sharing
+Este proyecto se encuentra deployeado en Firebase, puedes ingresar y probarlo en el siguiente link:
+
+https://gamer-room-react.web.app/
 
 
-# Getting Started with Create React App
+Si prefieres correrlo de manera local, seguí los siguientes pasos:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Descargá el proyecto de este repositorio.
+2. Abrí el directorio del proyecto en tu editor de código favorito.
+3. Corré el comando *npm start.*.**
+4. Abrí http://localhost:3000 para verlo en tu navegador.
 
-## Available Scripts
+![](public/gif/Gamer%20Room%20Gif.gif)
+ 
+## Build
 
-In the project directory, you can run:
+Este proyecto fue realizado con React, trayendo los productos de una base de datos ubicada en [Firebase](https://firebase.google.com/).
 
-### `npm start`
+## Librerias utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* [React-router-dom](https://v5.reactrouter.com/web/guides/quick-start): Paquete para implementar routing dinámico en una web app. En este proyecto, utilizado para el routing. **Lo puedes agregar a tu proyecto con *npm add react-router-dom*.**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* [React-bootstrap](https://react-bootstrap.github.io/): Librería que provee componentes de Bootstrap como componentes puros de React. En este proyecto, se utiliza para componentes y estilos. **Lo puedes agregar a tu proyecto con *npm add react-bootstrap*.**
 
-### `npm test`
+* [React Hook Form](https://react-hook-form.com/): Librería utilizada para para validación y funcionamiento de formularios. **Lo puedes agregar a tu proyecto con *npm add formik*.**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* [universe.io](https://uiverse.io/): Librería de elementos de interfaz para ayudar a destacar tu proyecto. esta libreria es gratuita y te proporciona el codigo HTML y CSS solo de copiar y pegar. En este proyecto se utilizo en el **Loader*.**.
 
-### `npm run build`
+* [React-toastify](https://fkhadra.github.io/react-toastify/introduction): Librerías utilizadas para añadir alertas personalizadas. **Lo puedes agregar a tu proyecto con *npm install --save react-toastify*.**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Si encuentras un error o tienes una sugerencia!
+Contactame a felixgue86@gmail.com
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

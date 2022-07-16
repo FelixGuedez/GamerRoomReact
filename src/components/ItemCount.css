@@ -6,6 +6,7 @@ span {
     height: 70px;
     width: 200px;
     border: 1px solid silver;
+    margin-bottom: 10px;
 
 }
 
@@ -16,10 +17,13 @@ span {
     font-size: 25px;
 }
 
-.btn-agregar{
+.btn-agregar {
     border: none;
     background-color: #FF7F11;
     border-radius: 5px;
     color: black;
-    /* width: 100px; */
+}
+
+.Toastify__toast-theme--dark {
+    color: #FF7F11;
 }

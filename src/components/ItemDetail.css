@@ -1,12 +1,7 @@
-h1{
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-}
-
 .container-item{
-    padding-top: 30px;
+    /* padding-top: 10px; */
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 
@@ -15,17 +10,16 @@ h1{
 .container-img {
     /* height: 500px;
     width: 400px; */
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     overflow: hidden;
-    padding: 50px;
+    padding: 30px;
 }
 
 
 .container-info {
-    height: 500px;
-    width: 500px;
-    /* background-color:bisque; */
+    /* height: 500px; */
+    max-width: 400px;
     padding: 25px;
     display: flex;
     flex-direction: column;
@@ -40,8 +34,8 @@ h1{
 
 
 .descripcion {
-    padding-top: 10px;
-    padding-bottom: 20px;
+    /* padding-top: 10px;
+    padding-bottom: 20px; */
     text-align: justify;
 }
 
@@ -50,5 +44,6 @@ h1{
     text-decoration: none;
     color: black;
     border-radius: 10px;
-    margin: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }

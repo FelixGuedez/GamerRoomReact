@@ -34,8 +34,6 @@ const ItemDetailContainer = () => {
 
         <>
             {loading ? <Loader/> : <ItemDetail juego={juego} />}
-
-
         </>
 
     )
